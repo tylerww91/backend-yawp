@@ -107,7 +107,7 @@ describe('restaurant routes', () => {
     `);
   });
 
-  it.only('POST /api/v1/restaurants/:restId/reviews creates a new review', async () => {
+  it('POST /api/v1/restaurants/:restId/reviews creates a new review', async () => {
     const [agent] = await registerAndLogin();
     const resp = await agent
       .post('/api/v1/restaurants/4/reviews')
